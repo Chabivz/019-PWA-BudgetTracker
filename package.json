@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "prestart": "webpack",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -33,7 +32,9 @@
     "webpack-pwa-manifest": "^4.3.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
     "install": "^0.13.0",
     "npm": "^7.20.3",
     "webpack": "^5.47.1",
