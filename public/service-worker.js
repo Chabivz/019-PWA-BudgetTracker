@@ -18,6 +18,7 @@ self.addEventListener('install', (event) => {
       .open(PRECACHE)
       .then((cache) => cache.addAll(FILES_TO_CACHE))
       .then(self.skipWaiting())
+      .catch(err => console.log(err))
   );
 });
 
@@ -38,6 +39,7 @@ self.addEventListener('activate', (event) => {
         );
       })
       .then(() => self.clients.claim())
+      .catch(err => console.log(err))
   );
 });
 
