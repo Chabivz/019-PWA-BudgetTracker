@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+let total;
 
 fetch("/api/transaction")
   .then(response => {
