@@ -18,7 +18,6 @@ self.addEventListener('install', (event) => {
       .open(PRECACHE)
       .then((cache) => cache.addAll(FILES_TO_CACHE))
       .then(self.skipWaiting())
-      .catch(err => console.log(err))
   );
 });
 
@@ -39,7 +38,9 @@ self.addEventListener('activate', (event) => {
         );
       })
       .then(() => self.clients.claim())
-      .catch(err => console.log(err))
+      .catch(err => {
+        res.status(statusCode >= 100 && statusCode < 600 ? err.code : 500);
+      })
   );
 });
 
@@ -62,7 +63,9 @@ self.addEventListener("fetch", function(evt) {
             // Network request failed, try to get it from the cache.
             return cache.match(evt.request);
           });
-      }).catch(err => console.log(err))
+      }).catch(err => {
+        res.status(statusCode >= 100 && statusCode < 600 ? err.code : 500);
+      })
     );
 
     return;

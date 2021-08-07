@@ -57,7 +57,9 @@ function checkDatabase() {
         const store = transaction.objectStore("pending");
         store.clear();
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        res.status(statusCode >= 100 && statusCode < 600 ? err.code : 500);
+      });
     }
   };
 }
