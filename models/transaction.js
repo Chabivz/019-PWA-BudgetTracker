@@ -18,9 +18,9 @@ const transactionSchema = new Schema(
       default: Date.now
     }
   },
-  // {
-  //   collection: "transaction"
-  // }
+  {
+    collection: "transaction"
+  }
 );
 
 const Transaction = mongoose.model("Transaction", transactionSchema);
