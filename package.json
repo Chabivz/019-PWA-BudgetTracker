@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack",
+    "start": "node server.js",
     "lite-server": "lite-server"
   },
   "repository": {
