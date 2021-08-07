@@ -22,8 +22,9 @@ mongoose.connect(
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
-  }
-);
+  } 
+).catch(err => console.log(err))
+;
 // routes
 app.use(require("./routes/api.js"));
 
