@@ -3,7 +3,8 @@
 [![Badge](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![Badge](https://img.shields.io/badge/GitHub-chabivz-blueviolet?style=flat-square&logo=appveyor)](https://github.com/chrisabiva)
 
-Hi Fitness enthusiast. This is a web app where you can track your workout exercies by cardio and resistance using MongoDB and Express
+Hi Traveler! The Budget Tracker app is an app that can track your expenses and your income. You can download the app and use it whether you are online or offline!
+
 ## Table of Contents
 
 - [About the Project](#about-the-project)
@@ -13,10 +14,10 @@ Hi Fitness enthusiast. This is a web app where you can track your workout exerci
 - [License](#License)
 
 ## About the Project
-- The motivation for this project is to track our workout exercises. Where it is Resistance or Cardio
-- When I want to add a new resistance workout it should input the `Exercise name, Weight (lbs), Sets, Reps and Duration (minutes)` of my workout. 
-- When I want to add a new cardio workout it should input the `Exercise Name, Distance (miles), and Duration (minutes)`
-- When I clicked the Dashboard in the Navigation bar it will display my workout dashboard chart.
+- The motivation for this project is to track our income and expenses. The user can log the name of the `Transaction` and value of `Transaction`
+- When I want to `Add Funds`, input the name of the transaction and the amount value and click `Add Funds Button`
+- When I want `Subtract Funds`, input the name of the transaction and the amount value and click `Subtract Funds`
+- An automated dashboard will show with the graph of the transactions!
 
 - Built with the following packages: 
   - [CSS](https://www.w3schools.com/css/)
@@ -26,17 +27,17 @@ Hi Fitness enthusiast. This is a web app where you can track your workout exerci
   - [nodemon](https://www.npmjs.com/package/nodemon)
   - [mongoose](https://www.npmjs.com/package/mongoose)
 
+
 ## Installation
 
-- Open [Fitness Tracker](https://github.com/Chabivz/014-TechBlog)
+- Open [Budget Tracker](https://github.com/Chabivz/019-PWA-BudgetTracker)
 - Clone the repository
 - install all the packages by `npm i` or `npm i express mongoose path `
 - On a separate terminal run `mongo` or `mongod` server.
-- Seed by going typing `node seeds/seed.js ` in the terminal.
-- Start the server by typing `node server.js` or `nodemon`
+- Start the server by typing `node server.js`
 
 ## Usage
-- Visit the deployed Heroku app [Fitness Tracker](https://limitless-citadel-24664.herokuapp.com/)
+- Visit the deployed Heroku app [Budget Tracker](http://limitless-hollows-25449.herokuapp.com/)
 - In The Fitness Tracker Home Page. Add a `New Workout`.
 - Enter `Exercise name, Weight (lbs), Sets, Reps and Duration` for `Resistance Workout`
 - Enter `Exercise Name, Distance (miles), and Duration (minutes)` for `Cardio Workout`
