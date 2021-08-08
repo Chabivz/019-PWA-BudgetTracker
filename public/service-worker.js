@@ -5,6 +5,8 @@ const FILES_TO_CACHE = [
   './icons/icon-192x192.png',
   './icons/icon-512x512.png',
   './js/index.js',
+  './dist/bundle.js',
+  './dist/manifest.ee267344fd89602b675ae178e5e56eae.json',
   'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
   './manifest.json',
 ];
